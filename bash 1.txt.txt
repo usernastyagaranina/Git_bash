@@ -1,0 +1,74 @@
+User@WIN-6DCM1OC20CN MINGW64 ~   Открыть директорию
+$ cd 
+
+User@WIN-6DCM1OC20CN MINGW64 ~   Показать папку в которой находимся
+$ pwd
+/c/Users/User
+
+User@WIN-6DCM1OC20CN MINGW64 ~    Создать каталог внутри папки
+$ mkdir test1
+
+User@WIN-6DCM1OC20CN MINGW64 ~    Перейти в созданную папку
+$ cd test1
+
+User@WIN-6DCM1OC20CN MINGW64 ~/test1    Создать файлы внутри каталога
+$ touch 1.txt
+$ touch 2.txt
+$ touch 3.txt 
+
+User@WIN-6DCM1OC20CN MINGW64 ~/test1    Проверить содержимое каталога
+$ ls -1
+
+User@WIN-6DCM1OC20CN MINGW64 ~               Перейти в домашнюю директорию
+$ cd ..
+
+User@WIN-6DCM1OC20CN MINGW64 /c/Users   Создать папку внутри домашней директории
+$ mkdir test2
+
+User@WIN-6DCM1OC20CN MINGW64 /c/Users   Удалить папку 
+$ rmdir test2
+
+User@WIN-6DCM1OC20CN MINGW64 /c/Users          Удалить файл 2 из папки
+$ cd test1
+
+User@WIN-6DCM1OC20CN MINGW64 /c/Users/test1   Создать папку в домашней директории и добавить в нее два файла
+$ rm 2.txt
+$ cd ..
+User@WIN-6DCM1OC20CN MINGW64 /c
+$ mkdir test3
+User@WIN-6DCM1OC20CN MINGW64 /c
+$ touch test33.txt test 333.txt
+
+User@WIN-6DCM1OC20CN MINGW64 /     Удалить папку
+$ cd ..
+User@WIN-6DCM1OC20CN MINGW64 /
+$ rm -r test3
+
+User@WIN-6DCM1OC20CN MINGW64 /     Создать папку в домашней директории
+$ mkdir test4
+
+User@WIN-6DCM1OC20CN MINGW64 /      Переместить файлы 1 и 3 из папки в новую папку
+$ mv test1/*.* test4
+
+
+User@WIN-6DCM1OC20CN MINGW64 /   В файле создать три строки со словом line
+$ echo line >1.txt
+User@WIN-6DCM1OC20CN MINGW64 /
+$ echo line>>1.txt
+User@WIN-6DCM1OC20CN MINGW64 /
+$ echo line >>1.txt
+
+User@WIN-6DCM1OC20CN MINGW64 /  Просмотреть содержимое файла
+$ cat 1.txt
+
+User@WIN-6DCM1OC20CN MINGW64 /  Добавить в файл три строки со словами line
+$ cat 1.txt>3.txt
+
+User@WIN-6DCM1OC20CN MINGW64 /  Посмотреть содержимое двух файлов сразу
+$ cat 1.txt 3.txt
+
+User@WIN-6DCM1OC20CN MINGW64 / Меняем сттроки в файле
+$ nano 1.txt
+Меняем название строк 
+ctrl+s сохранить 
+ctrl+x выйти

@@ -1,0 +1,62 @@
+User@WIN-6DCM1OC20CN MINGW64 / Зайти в домашнюю директорию 
+$ cd ..
+
+User@WIN-6DCM1OC20CN MINGW64 / Создать папку 
+$ mkdir test3
+
+User@WIN-6DCM1OC20CN MINGW64 / Добавить в папку три файла 4, 5 и 6, в каждом из которых должно быть по 4 строки row1, row2, row3, row4
+$ cd test3
+User@WIN-6DCM1OC20CN MINGW64 /test3
+$ touch 4.txt 5.txt 6.txt
+User@WIN-6DCM1OC20CN MINGW64 /test3
+$ echo row1 > 4.txt
+User@WIN-6DCM1OC20CN MINGW64 /test3
+$ echo row2>>4.txt
+User@WIN-6DCM1OC20CN MINGW64 /test3
+$ echo row3>>4.txt
+User@WIN-6DCM1OC20CN MINGW64 /test3
+$ echo row4>>4.txt
+User@WIN-6DCM1OC20CN MINGW64 /test3
+$ cat 4.txt>5.txt
+User@WIN-6DCM1OC20CN MINGW64 /test3
+$ cat 4.txt>6.txt
+
+User@WIN-6DCM1OC20CN MINGW64 /test3 Найти строку row2 в файле 5
+$ grep "row2" 5.txt
+
+User@WIN-6DCM1OC20CN MINGW64 /test3 Посчитать сколько строк с содержимым row в файле 6
+$ grep "row" -c 6.txt
+
+User@WIN-6DCM1OC20CN MINGW64 /test3  Найти файл внутри папки 
+$ find -name "5.txt"
+
+User@WIN-6DCM1OC20CN MINGW64 /test3 Удалить файл 5
+$ find -name "5.txt" -delete
+
+User@WIN-6DCM1OC20CN MINGW64 /test3 Используя команду echo ,добавить слово test в файл 4 
+$ echo test>>4.txt
+
+User@WIN-6DCM1OC20CN MINGW64 /test3 Заменяем строку test на fail(сохраняем ctrl+s ctrl+x выходим)
+$ nano 4.txt
+
+User@WIN-6DCM1OC20CN MINGW64 /test3 Добавить в файл 4 слово test,так чтобы сохранилось содержимое
+$ echo test>> 4.txt
+
+User@WIN-6DCM1OC20CN MINGW64 /test3 Посмотреть все процессы для юзеров не только в консоли
+$ ps aux
+
+User@WIN-6DCM1OC20CN MINGW64 /test3 Убить процесс в консоли
+$ kill 666
+
+User@WIN-6DCM1OC20CN MINGW64 /test3 Узнать доступность ресурса artsiomrusau.com , с помощью ping
+$ ping artsiomrusau.com
+
+User@WIN-6DCM1OC20CN MINGW64 / Отправить 5 пакетов на сайт 
+$ ping -n 5 artsiomrusau.com
+
+User@WIN-6DCM1OC20CN MINGW64 /   Используя GET и команду curl, получите информацию о зарегистрированных питомцах с любым статусом
+$ curl https://petstore.swagger.io/v2/pet/findByStatus?status=sold
+
+User@WIN-6DCM1OC20CN MINGW64 ~   Используя POST и команду curl, создайте нового пользователя на https://petstore.swagger.io/
+$ curl -X POST -H "Content-Type: application/json" -d '{"id": 0, "username": "cotik222", "firstName": "Meow", "lastName": "Cat", "email": "meow@example.com", "password": "meowmeow123", "phone": "12345678990"}' "https://petstore.swagger.io/v2/user"
+
